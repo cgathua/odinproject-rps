@@ -1,0 +1,92 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: auto !important;
+    overflow-x: hidden !important
+}
+
+body {
+    font-family: monospace;
+    line-height: 1.75;
+}
+
+
+header {
+    padding: 1rem;
+}
+
+header h1 {
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: 300;
+    font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+}
+
+
+.counter_display {
+    border: 2px solid var(--primary-color);
+    width: 18rem;
+    margin: 2.5rem auto;
+    font-size: 2.5rem;
+    border-radius: 2px 16px;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.overlay {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 2px 8px;
+    border-radius: 2px 8px;
+}
+
+#player_figcaption {
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    transform: translate(-10%, -50%);
+}
+
+#computer_figcaption {
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    transform: translate(10%, -50%);
+}
+
+.result_display {
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.game_svgs {
+    margin: 0 auto;
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.three_options {
+    display: inline-block;
+    padding: 1rem;
+}
+
+.user_prompt {
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 300;
+}
